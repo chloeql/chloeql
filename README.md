@@ -14,3 +14,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 The Chloe Query Language (CQL) is a high level cross-platform query language.
+*under construction*
