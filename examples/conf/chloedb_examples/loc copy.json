@@ -1,0 +1,24 @@
+CREATE DATABASE chloedb_examples;
+USE DATABASE chloedb_examples;
+
+CREATE TABLE location
+(
+    location_number nonneg int,
+    address address
+);
+
+CREATE TABLE item
+(
+    item_number nonneg int,
+    item_name string
+);
+
+CREATE TABLE sales
+(
+    location_number location.location_number,
+    item_number item.item_number,
+    sales_time  timestamp,
+    quantity nonneg int
+);
+
+
