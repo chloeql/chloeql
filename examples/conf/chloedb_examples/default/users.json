@@ -1,0 +1,35 @@
+{
+    "schema_name": "default",
+    "table_name": "users",
+    "owner": "chloeql",
+    "comment": "ChloeQL users",
+    "table_type": "config",
+    "source_type": "external",
+    "definition": "select * from postgres.postgres.public.users",
+    "table_schema": [
+        {
+            "column_name": "id",
+            "type": "nonneg int"
+        },
+        {
+            "column_name": "first_name",
+            "type": "text"
+        },
+        {
+            "column_name": "last_name",
+            "type": "text"
+        },
+        {
+            "column_name": "position",
+            "type": "text"
+        },
+        {
+            "column_name": "management_level",
+            "type": "nonneg int"
+        },
+        {
+            "column_name": "has_de_permission",
+            "type": "boolean"
+        }
+    ]
+}

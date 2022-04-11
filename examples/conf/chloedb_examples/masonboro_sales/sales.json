@@ -1,0 +1,31 @@
+{
+    "schema_name": "masonboro_sales",
+    "table_name": "sales",
+    "owner": "17032",
+    "comment": "Masonboro Item-Location-level Sales",
+    "table_type": "auto",
+    "source_type": "external",
+    "definition": "select * from postgres.postgres.masonboro_sales.sales",
+    "table_schema": [
+        {
+            "column_name": "transaction_id",
+            "type": "nonneg int"
+        },
+        {
+            "column_name": "item_number",
+            "type": "masonboro_config.item"
+        },
+        {
+            "column_name": "location_number",
+            "type": "masonboro_config.location"
+        },
+        {
+            "column_name": "transaction_timestamp",
+            "type": "timestamp"
+        },
+        {
+            "column_name": "item_quantity",
+            "type": "int"
+        }
+    ]
+}

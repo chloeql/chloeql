@@ -1,0 +1,35 @@
+{
+    "schema_name": "masonboro_config",
+    "table_name": "location",
+    "owner": "43138",
+    "comment": "Masonboro Locations",
+    "table_type": "config",
+    "source_type": "external",
+    "definition": "select * from postgres.postgres.masonboro_config.location",
+    "table_schema": [
+        {
+            "column_name": "location_number",
+            "type": "nonneg int"
+        },
+        {
+            "column_name": "street_address",
+            "type": "text"
+        },
+        {
+            "column_name": "city",
+            "type": "text"
+        },
+        {
+            "column_name": "state",
+            "type": "text"
+        },
+        {
+            "column_name": "zipcode",
+            "type": "text"
+        },
+        {
+            "column_name": "is_store",
+            "type": "boolean"
+        }
+    ]
+}

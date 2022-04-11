@@ -1,0 +1,23 @@
+{
+    "schema_name": "masonboro_config",
+    "table_name": "item",
+    "owner": "43138",
+    "comment": "Masonboro Items",
+    "table_type": "config",
+    "source_type": "external",
+    "definition": "select * from postgres.postgres.masonboro_config.item",
+    "table_schema": [
+        {
+            "column_name": "item_number",
+            "type": "nonneg int"
+        },
+        {
+            "column_name": "name",
+            "type": "text"
+        },
+        {
+            "column_name": "vendor",
+            "type": "text"
+        }
+    ]
+}
